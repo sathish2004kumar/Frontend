@@ -38,3 +38,47 @@ console.log(14 ^ 20);
 // 1 0 1 0 ->10                     1 0 1 0 0 ->20
 // 1 1 1 1 <-Answer is 15           1 1 0 1 0 <-Answer is 26
 
+
+// unary operators (increment ++ -- -)
+
+let z=10;
+
+console.log(++z); 
+
+console.log(z++);
+
+console.log(--z);
+
+console.log(z--);
+
+console.log(+z);
+
+console.log(-z);
+
+console.log(10>20 || 20<10);
+
+console.log(null==100 || undefined==0);
+
+//assignment operators (+= -= *= /= %=)
+let x=10;
+console.log(x+=5);
+console.log(x-=3);
+console.log(x*=2);
+console.log(x/=4);
+console.log(x%=0);
+
+let y=5;
+console.log(++y);
+console.log(y++);
+
+console.log("Ap"==true);
+console.log(10===10);
+
+
+let age=10;
+if(age>18){
+    console.log("Eligible for voting");
+}
+else{
+    console.log("Not eligible for voting");
+}

@@ -9,7 +9,7 @@ console.log("sk"!=2);
 //String and boolean
 
 console.log("Ap">false);
-console.log("Ap"==true);
+
 console.log("Ap"==false);
 console.log("Ap"!=true);
 console.log("Ap"!=false);
