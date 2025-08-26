@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    
+    <p id="p2"></p>
+    <p class="p3">First</p>
+    <p class="p3">Second</p>
+    <p class="p3">Last</p>
+     <script>
+        document.getElementById("p1").innerText="<strong>How are you!</strong>";
+        console.log(document.getElementById("p1").textContent);
+        document.getElementById("p2").innerHTML=(document.getElementById("p1").textContent);
+        
+       </script>    
+</body>
+</html>

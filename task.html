@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p>Name</p>
+  <input type="text" id="name" onchange="Form()">
+  <span id="nameError"></span>
+  <br><br>
+
+  <p>Subject</p>
+  <input type="text" id="subject" onchange="Form()">
+  <span id="subjectError"></span>
+  <br><br>
+
+  <p>City</p>
+  <input type="text" id="city" onchange="Form()">
+  <span id="cityError"></span>
+  <br><br>
+
+  <button id="submit" disabled>Next</button>
+
+  <script>
+    function Form() {
+      let name = document.getElementById("name").value.trim();
+      let subject = document.getElementById("subject").value.trim();
+      let city = document.getElementById("city").value.trim();
+
+     
+      document.getElementById("nameError").innerText = "";
+      document.getElementById("subjectError").innerText = "";
+      document.getElementById("cityError").innerText = "";
+
+      let isValid = true;
+
+      if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        isValid = false;
+      }
+      if (subject === "") {
+        document.getElementById("subjectError").innerText = "Subject is required";
+        isValid = false;
+      }
+      if (city === "") {
+        document.getElementById("cityError").innerText = "City is required";
+        isValid = false;
+      }
+
+      
+      document.getElementById("submit").disabled = !isValid;
+    }
+    </script>
+</body>
+</html>

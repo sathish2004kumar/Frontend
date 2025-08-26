@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button disabled onclick="click1()">show/hide</button>
+    <p id="p1">How are you</p>
+    <input onchange="openText(this)" type="text">
+   
+    <br><br>
+    <script>
+        let flag = true;
+        function openText(e){
+            console.log(e.value);
+            if(e.value=="Student"){
+                document.getElementsByTagName("button")[0].disabled=false;
+                
+            }else{
+                document.getElementsByTagName("button")[0].disabled=true;
+                
+            }
+            document.getElementById("p1").innerText=e.value;
+            
+        }
+        function click1(){
+            flag = !flag
+            if(flag){
+                document.getElementById("p1").style.backgroundColor="black";
+             }else{
+             document.getElementById("p1").style.backgroundColor="white";
+             }
+               
+        }
+    </script>
+</body>
+</html>

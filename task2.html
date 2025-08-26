@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>add</button>
+    <img src="bikedown1.webp" height="150vh" width="150vh" alt="">
+    <script>
+        document.getElementsByTagName("button")[0].addEventListener("click",function(){
+            let img = document.createElement("img");
+            img.src="bikedown1.webp";
+            img.height=150;
+            img.width=150;
+            document.body.appendChild(img);
+        })  
+    </script>
+</body>
+</html>
